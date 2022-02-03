@@ -3,8 +3,10 @@
 //request and response which will have their respective functions send and receive, which we will then export
 //and use those functions in our main https.js file
 
-const {send} = require('./request');
-const {read} = require('./response');
+//This has been done using import instead of require statement
+
+import {send} from './request.mjs';
+import {read} from './response.mjs';
 
 function makerequest(url,data){
     send(url,data);
